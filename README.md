@@ -11,11 +11,21 @@ Disaster Management is an Android app built with Jetpack Compose for disaster pr
 - Displays nearby safe zones on an OpenStreetMap view
 - Tracks progress, badges, and learning milestones in the profile area
 
-## Screenshots
+## Screenshots (Real Emulator Captures)
 
-The screenshot overview below is committed to the repo so the README stays useful on GitHub without external hosting.
+Captured from the running app on Android Emulator (`1080x2400`), not generated mockups.
 
-![App screenshot overview](docs/screenshots/app-overview.svg)
+| Dashboard | Training Hub |
+| --- | --- |
+| ![Dashboard](docs/screenshots/dashboard.png) | ![Training Hub](docs/screenshots/training-hub.png) |
+
+| Drill Simulator | Safety Map |
+| --- | --- |
+| ![Drill Simulator](docs/screenshots/drill-simulator.png) | ![Safety Map](docs/screenshots/safety-map.png) |
+
+| Profile | All Badges |
+| --- | --- |
+| ![Profile](docs/screenshots/profile.png) | ![All Badges](docs/screenshots/badges.png) |
 
 ## Features
 
@@ -25,7 +35,7 @@ The screenshot overview below is committed to the repo so the README stays usefu
 - Drill simulator with countdown timer, answer validation, and explanations
 - Safety map with nearby shelters, directions, bookmarks, and offline map status
 - Profile screen with readiness breakdown, badge progress, and leaderboard cards
-- Badge overview screen for tracking unlocked and locked achievements
+- Full badges screen for tracking unlocked and locked achievements
 
 ## Tech Stack
 
@@ -78,6 +88,7 @@ app/src/main/java/com/example/disastermanagement/
 - The app currently uses seeded training modules, safe zones, and drill scenarios from the `AppViewModel`.
 - Remote images are loaded from network URLs, so screens with images need connectivity.
 - The map screen uses OpenStreetMap tiles through osmdroid.
+- Screenshot files are stored in `docs/screenshots/` and can be replaced with fresh captures anytime.
 
 ## License
 
